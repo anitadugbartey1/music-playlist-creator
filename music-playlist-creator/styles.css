@@ -1,0 +1,292 @@
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #850808;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #cb2727;
+    padding: 10px 20px;
+    color: white;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+header .logo {
+    display: flex;
+    align-items: center;
+}
+
+header .logo img {
+    height: 40px;
+    margin-right: 10px;
+}
+
+header nav ul {
+    display: flex;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+header nav ul li {
+    margin: 0 15px;
+}
+
+header nav ul li a {
+    color: white;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+header nav ul li a:hover {
+    color: #ddd;
+}
+
+header .search-bar {
+    display: flex;
+    align-items: center;
+}
+
+header .search-bar input {
+    padding: 5px;
+    border: none;
+    border-radius: 4px 0 0 4px;
+}
+
+header .search-bar button {
+    padding: 5px 10px;
+    border: none;
+    border-radius: 0 4px 4px 0;
+    background-color: #850808;
+    color: white;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+header .search-bar button:hover {
+    background-color: #777;
+}
+
+header .search-bar button i {
+    font-size: 16px;
+}
+
+main {
+    display: flex;
+    padding: 20px;
+}
+
+.playlist-details {
+    flex: 1;
+    text-align: center;
+}
+
+.playlist-image-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.playlist-image {
+    width: 80%;
+    max-width: 400px;
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+
+.playlist-details h2 {
+    font-size: 24px;
+    margin-top: 10px;
+}
+
+.song-list-container {
+    flex: 1;
+    padding-left: 20px;
+}
+
+.song-list {
+    list-style: none;
+    padding: 0;
+}
+
+.song-item {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.song-item img {
+    width: 50px;
+    height: 50px;
+    border-radius: 5px;
+    margin-right: 10px;
+}
+
+.song-details {
+    display: flex;
+    flex-direction: column;
+}
+
+.song-details h3,
+.song-details p {
+    margin: 0;
+}
+
+/* Playlist Cards Container */
+#playlist-cards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding: 20px;
+}
+
+/* Playlist Card */
+.playlist-card {
+    background: #ff9191;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    margin: 10px;
+    overflow: hidden;
+    width: 200px;
+    cursor: pointer;
+    transition: transform 0.2s;
+}
+
+.playlist-card:hover {
+    transform: scale(1.05);
+}
+
+.playlist-card img {
+    width: 100%;
+    height: auto;
+}
+
+.playlist-card h3,
+.playlist-card p {
+    margin: 10px;
+}
+
+/* Like Count */
+.like-count {
+    display: flex;
+    align-items: center;
+    margin: 10px;
+    cursor: pointer;
+}
+
+.like-count i {
+    margin-right: 5px;
+    color: red;
+    transition: transform 0.2s;
+}
+
+.like-count:hover i {
+    transform: scale(1.2);
+}
+
+.liked i {
+    color: darkred;
+}
+
+/* Modal Styles */
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0.4);
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+.modal-content {
+    background-color: #fefefe;
+    margin: 5% auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 100%;
+    max-width: 700px;
+    border-radius: 8px;
+    position: relative;
+    box-sizing: border-box;
+}
+
+/* Close Button */
+.close {
+    color: #000;
+    position: absolute;
+    top: 10px;
+    right: 20px;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+/* Playlist Details in Modal */
+.playlist-cover-art {
+    width: 100px;
+    height: 100px;
+    margin-right: 20px;
+    border-radius: 4px;
+    object-fit: cover;
+}
+
+#modalHeader {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+#modalHeader h2,
+#modalHeader h3 {
+    margin: 0 0 10px 0;
+}
+
+/* Shuffle Button Styles */
+.shuffle-button {
+    display: inline-block;
+    margin-top: 10px;
+    padding: 10px 20px;
+    font-size: 16px;
+    font-weight: bold;
+    color: #fff;
+    background-color: #007bff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.shuffle-button:hover {
+    background-color: #0056b3;
+}
+
+.shuffle-button:active {
+    background-color: #004085;
+}
+
+.featured-playlist {
+    display: flex;
+    max-width: 1200px;
+    width: 100%;
+    background-color: #cb2727;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    overflow: hidden;
+}
