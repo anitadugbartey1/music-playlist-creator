@@ -50,7 +50,7 @@ Deployed Application (optional): [Music Playlist Explorer Deployed Site]
 
 ### Walkthrough Video
 
-`https://drive.google.com/file/d/1OxKnFJSmzS0Mrcy1e1LwnxHWnF_Cr3It/view?usp=drivesdkADD_EMBEDDED_CODE_HERE`
+`https://drive.google.com/file/d/1OxKnFJSmzS0Mrcy1e1LwnxHWnF_Cr3It/view?usp=drivesdk`
 
 ### Reflection
 
