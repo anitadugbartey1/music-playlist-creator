@@ -24,7 +24,7 @@
                 </ul>
             </nav>
             <div class="search-bar">
-                <input type="text" placeholder="Search...">
+                <input type="text" id="searchBar" class="search-bar" placeholder="Search playlists by name or creator...">
                 <button type="submit"><i class="fa fa-search"></i></button>
             </div>
         
@@ -32,7 +32,21 @@
     </header>
 
     <main> 
-       
+        <form id="newPlaylistForm" class="new-playlist-form">
+            <h3>Create New Playlist</h3>
+            <input type="text" id="newPlaylistName" placeholder="Playlist Name" required>
+            <input type="text" id="newPlaylistCreator" placeholder="Creator Name" required>
+            <div id="songsContainer">
+                <div class="song-input">
+                    <input type="text" placeholder="Song Title" class="song-title" required>
+                    <input type="text" placeholder="Artist" class="song-artist" required>
+                    <input type="text" placeholder="Duration" class="song-duration" required>
+                </div>
+            </div>
+            <button type="button" id="addSongButton">Add Another Song</button>
+            <button type="submit">Create Playlist</button>
+        </form>
+        
         <section class="playlist-cards" id="playlist-cards">
 
         </section>

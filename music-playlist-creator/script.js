@@ -38,7 +38,14 @@ function createPlaylistCards(playlists) {
        // Add event listener for like icon here
        likeIcon.addEventListener('click', (event) => {
            event.stopPropagation();
-           playlist.likeCount++;
+           if (!playlist.liked) {
+            playlist.likeCount++;
+            playlist.liked = true;
+        } else {
+            playlist.likeCount--;
+            playlist.liked = false;
+        }
+           
            likeCount.textContent = playlist.likeCount;
            likeIcon.classList.toggle('liked');
        });
@@ -47,6 +54,9 @@ function createPlaylistCards(playlists) {
    });
 }
 
+    
+
+    
 // This calls the function createPlaylistCards 
 createPlaylistCards(data.playlists);
 
