@@ -60,11 +60,11 @@ Deployed Application (optional): [Music Playlist Explorer Deployed Site]
 
 * If you had more time, what would you have done differently? Would you have added additional features? Changed the way your project responded to a particular event, etc.
   
-If I haad more time I would have added more stretch features and made the site more functional. I wanted to allow users to delete playlists but did not have enough time to do so. I also would have changed the way users saw the shuffle screen. The shuffled container could have been more colorful.
+If I had more time I would have added more stretch features and made the site more functional. I wanted to allow users to delete playlists but did not have enough time to do so. I also would have changed the way users saw the shuffle screen. The shuffled container could have been more colorful.
 
 * Reflect on your project demo, what went well? Were there things that maybe didn't go as planned? Did you notice something that your peer did that you would like to try next time?
 
-The design and the css aspect of the demo wnet really well. I love designing the project. Front end work isnt my favorite but I love getting to play with different color schemes to express my pallette and tastes. I think placing the stretch features presented the most difficulty because I would design the body of my feature and struggle with the functionality of it. The search bar is the most promininent example of this struggle. I think I would try to create a feature that would allow a user to close out a tab without pressing the close button or just by clicking any part of the screen which someone did.
+The design and the css aspect of the demo went really well. I love designing the project. Front end work isnt my favorite but I love getting to play with different color schemes to express my pallette and tastes. I think placing the stretch features presented the most difficulty because I would design the body of my feature and struggle with the functionality of it. The search bar is the most promininent example of this struggle. I think I would try to create a feature that would allow a user to close out a tab without pressing the close button or just by clicking any part of the screen which someone did.
 
 ### Open-source libraries used
 
